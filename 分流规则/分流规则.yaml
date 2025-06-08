@@ -616,6 +616,12 @@ rule-providers:
     interval: 86400
     path: ./ruleset/AdditionalFilter.list
     url: https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/ruleset/AdditionalFilter.list
+  google:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
+    path: ./ruleset/google.yaml
+    interval: 86400
 
 rules:
   - "RULE-SET,reject_non_ip,广告拦截"
