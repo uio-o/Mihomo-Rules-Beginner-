@@ -1,3 +1,4 @@
+## 策略组
 proxy-groups:
   - name: 节点选择
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
@@ -30,6 +31,26 @@ proxy-groups:
     interval: 300
     tolerance: 20
     lazy: false
+  - name: Telegram
+    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
+    type: select
+    proxies:
+      - 节点选择
+      - 香港节点
+      - 澳门节点
+      - 台湾节点
+      - 狮城节点
+      - 日本节点
+      - 韩国节点
+      - 美国节点
+      - 英国节点
+      - 加拿大节点
+      - 澳洲节点
+      - 南美节点
+      - 欧盟节点
+      - 非洲节点
+      - 手动切换
+      - 全球直连
   - name: 人工智能
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bot.png
     type: select
@@ -50,45 +71,17 @@ proxy-groups:
       - 非洲节点
       - 手动切换
       - 全球直连
-  - name: 加密货币
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Cryptocurrency_3.png
+  - name: EMBY
+    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Emby.png
     type: select
     proxies:
       - 节点选择
       - 香港节点
-      - 澳门节点
       - 台湾节点
       - 狮城节点
-      - 日本节点
       - 韩国节点
       - 美国节点
-      - 英国节点
-      - 加拿大节点
-      - 澳洲节点
-      - 南美节点
       - 欧盟节点
-      - 非洲节点
-      - 手动切换
-      - 全球直连
-  - name: Telegram
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
-    type: select
-    proxies:
-      - 节点选择
-      - 香港节点
-      - 澳门节点
-      - 台湾节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 美国节点
-      - 英国节点
-      - 加拿大节点
-      - 澳洲节点
-      - 南美节点
-      - 欧盟节点
-      - 非洲节点
-      - 手动切换
       - 全球直连
   - name: Google
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
@@ -130,65 +123,6 @@ proxy-groups:
       - 非洲节点
       - 手动切换
       - 全球直连
-  - name: Netflix
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
-    type: select
-    proxies:
-      - 节点选择
-      - 香港节点
-      - 台湾节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 美国节点
-      - 英国节点
-      - 加拿大节点
-      - 澳洲节点
-      - 南美节点
-      - 欧盟节点
-      - 非洲节点
-      - 手动切换
-      - 全球直连
-  - name: TikTok
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/TikTok.png
-    type: select
-    proxies:
-      - 节点选择
-      - 香港节点
-      - 澳门节点
-      - 台湾节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 美国节点
-      - 英国节点
-      - 加拿大节点
-      - 澳洲节点
-      - 南美节点
-      - 欧盟节点
-      - 非洲节点
-      - 手动切换
-      - 全球直连
-  - name: PikPak
-    icon: https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/icons/PikPak.png
-    type: select
-    proxies:
-      - 节点选择
-      - 香港节点
-      - 澳门节点
-      - 台湾节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 美国节点
-      - 英国节点
-      - 加拿大节点
-      - 澳洲节点
-      - 南美节点
-      - 欧盟节点
-      - 非洲节点
-      - 手动切换
-      - 全球直连
   - name: 哔哩哔哩
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
     type: select
@@ -197,14 +131,6 @@ proxy-groups:
       - 台湾节点
       - 香港节点
       - 澳门节点
-  - name: 懂王社媒
-    icon: https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/icons/TruthSocial.png
-    type: select
-    proxies:
-      - 美国节点
-      - 加拿大节点
-      - 节点选择
-      - 手动切换
   - name: 学术资源
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Scholar.png
     type: select
@@ -252,12 +178,6 @@ proxy-groups:
       - 非洲节点
       - 手动切换
       - 全球直连
-  - name: 搜狗输入
-    icon: https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/icons/Sougou.png
-    type: select
-    proxies:
-      - 全球直连
-      - REJECT
   - name: 静态资源
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Cloudflare.png
     type: select
@@ -438,7 +358,7 @@ proxy-groups:
   - name: 南美节点
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/America_Map.png
     include-all: true
-    filter: (?i)墨西哥|Mexico|MEX|MX|危地马拉|Guatemala|GTM|GT|伯利兹|Belize|BLZ|BZ|洪都拉斯|Honduras|HND|HN|萨尔瓦多|El Salvador|SLV|SV|尼加拉瓜|Nicaragua|NIC|NI|哥斯达黎加|Costa Rica|CRI|CR|巴拿马|Panama|PAN|PA|古巴|Cuba|CUB|CU|多米尼加共和国|Dominican Republic|DOM|DO|海地|Haiti|HTI|HT|委内瑞拉|Venezuela|VEN|VE|哥伦比亚|Colombia|COL|CO|厄瓜多尔|Ecuador|ECU|EC|秘鲁|Peru|PER|PE|玻利维亚|Bolivia|BOL|BO|智利|Chile|CHL|CL|阿根廷|Argentina|ARG|AR|乌拉圭|Uruguay|URY|巴拉圭|Paraguay|PRY|PY|巴西|Brazil|BRA|BR。
+    filter: (?i)墨西哥|Mexico|MEX|MX|危地马拉|Guatemala|GTM|GT|伯利兹|Belize|BLZ|BZ|洪都拉斯|Honduras|HND|HN|萨尔瓦多|El Salvador|SLV|SV|尼加拉瓜|Nicaragua|NIC|NI|哥斯达黎加|Costa Rica|CRI|CR|巴拿马|Panama|PAN|PA|古巴|Cuba|CUB|CU|多米尼加共和国|Dominican Republic|DOM|DO|海地|Haiti|HTI|HT|委内瑞拉|Venezuela|VEN|VE|哥伦比亚|Colombia|COL|CO|厄瓜多尔|Ecuador|ECU|EC|秘鲁|Peru|PER|PE|玻利维亚|Bolivia|BOL|BO|智利|Chile|CHL|CL|阿根廷|Argentina|ARG|AR|乌拉圭|Uruguay|URY|巴拉圭|Paraguay|PRY|PY|巴西|Brazil|BRA|BR
     exclude-filter: (?i)家宽|家庭|商宽|落地
     type: url-test
     interval: 300
@@ -462,19 +382,14 @@ proxy-groups:
       - 手动切换
       - 自动选择
       - 人工智能
-      - 加密货币
       - Telegram
+      - EMBY
       - Google
       - YouTube
-      - Netflix
-      - TikTok
-      - PikPak
       - 哔哩哔哩
-      - 懂王社媒
       - 学术资源
       - 游戏平台
       - 微软服务
-      - 搜狗输入
       - 静态资源
       - FCM推送
       - Steam修复
@@ -497,6 +412,7 @@ proxy-groups:
       - 南美节点
       - 非洲节点
 
+## 规则集
 rule-providers:
   Microsoft:
     type: http
@@ -505,13 +421,6 @@ rule-providers:
     interval: 86400
     url: https://ruleset.skk.moe/Clash/non_ip/microsoft.txt
     path: ./sukkaw_ruleset/microsoft_non_ip.txt
-  TruthSocial:
-    url: https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/ruleset/TruthSocial.list
-    path: ./ruleset/TruthSocial.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
   reject_non_ip_no_drop:
     type: http
     behavior: classical
@@ -540,13 +449,6 @@ rule-providers:
     interval: 86400
     url: https://ruleset.skk.moe/Clash/domainset/reject.txt
     path: ./sukkaw_ruleset/reject_domainset.txt
-  sogouinput:
-    type: http
-    behavior: classical
-    format: text
-    interval: 86400
-    url: https://ruleset.skk.moe/Clash/non_ip/sogouinput.txt
-    path: ./sukkaw_ruleset/sogouinput.txt
   cdn_domainset:
     type: http
     behavior: domain
@@ -582,13 +484,6 @@ rule-providers:
     interval: 86400
     url: https://ruleset.skk.moe/Clash/non_ip/ai.txt
     path: ./sukkaw_ruleset/ai_non_ip.txt
-  TikTok:
-    type: http
-    behavior: classical
-    format: text
-    interval: 86400
-    url: https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/ruleset/TikTok.list
-    path: ./ruleset/TikTok.list
   PlayStoreFix:
     type: http
     behavior: classical
@@ -602,6 +497,7 @@ rule-providers:
     format: text
     interval: 86400
     url: https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/ruleset/SteamFix.list
+    path: ./ruleset/SteamFix.list
   GoogleFCM:
     type: http
     behavior: classical
@@ -619,9 +515,18 @@ rule-providers:
   google:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
+    format: text
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt
     path: ./ruleset/google.yaml
     interval: 86400
+  telegramip:
+    type: http
+    behavior: ipcidr
+    format: mrs
+    path: ./rules/telegramip.mrs
+    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/telegramip.mrs"
+    interval: 86400
+  
 
 rules:
   - "RULE-SET,reject_non_ip,广告拦截"
@@ -629,15 +534,13 @@ rules:
   - "RULE-SET,reject_non_ip_drop,REJECT-DROP"
   - "RULE-SET,reject_non_ip_no_drop,广告拦截"
   - "RULE-SET,AdditionalFilter,广告拦截"
-  - "RULE-SET,sogouinput,搜狗输入"
-  - "RULE-SET,TruthSocial,懂王社媒"
   - "RULE-SET,cdn_domainset,静态资源"
   - "RULE-SET,cdn_non_ip,静态资源"
   - "RULE-SET,apple_cdn,全球直连"
   - "RULE-SET,microsoft_cdn_non_ip,全球直连"
   - "RULE-SET,ai_non_ip,人工智能"
   - "RULE-SET,Microsoft,微软服务"
-  - "RULE-SET,TikTok,TikTok"
+  - "RULE-SET,telegramip,Telegram"  
   - "RULE-SET,SteamFix,Steam修复"
   - "RULE-SET,PlayStoreFix,Play商店修复"
   - "RULE-SET,GoogleFCM,FCM推送"
@@ -646,25 +549,26 @@ rules:
   - "GEOSITE,GOOGLE,Google"
   - "GEOSITE,YOUTUBE@CN,全球直连"
   - "GEOSITE,YOUTUBE,YouTube"
-  - "GEOSITE,NETFLIX,Netflix" 
   - "GEOSITE,BILIBILI,哔哩哔哩"
+  - "GEOSITE,TELEGRAM,Telegram"
   - "GEOSITE,CATEGORY-GAMES@CN,全球直连"
   - "GEOSITE,CATEGORY-GAMES,游戏平台"
   - "GEOSITE,CATEGORY-SCHOLAR-!CN,学术资源"
   - "GEOSITE,CATEGORY-SCHOLAR-CN,全球直连"
-  - "GEOSITE,CATEGORY-CRYPTOCURRENCY,加密货币"
-  - "GEOSITE,TELEGRAM,Telegram"
-  - "GEOSITE,PIKPAK,PikPak"
   - "GEOSITE,GEOLOCATION-!CN,节点选择"
   - "GEOSITE,CN,全球直连"
   - "GEOSITE,PRIVATE,全球直连"
-  - "GEOIP,NETFLIX,Netflix,no-resolve"
   - "GEOIP,GOOGLE,Google,no-resolve"
-  - "GEOIP,TELEGRAM,Telegram,no-resolve"
+  - "GEOIP,Telegram,Telegram,no-resolve"
   - "GEOIP,CN,全球直连,no-resolve"
   - "GEOIP,LAN,全球直连,no-resolve"
   - "GEOIP,PRIVATE,全球直连,no-resolve"
   - "MATCH,漏网之鱼"
+
+
+
+
+  
 
 sniffer:
   sniff:
@@ -720,4 +624,4 @@ geox-url:
   geoip: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat"
   geosite: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
   mmdb: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/Country.mmdb"
-  asn: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-ASN.mmdb"
+  asn: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-ASN.mmdb" 
