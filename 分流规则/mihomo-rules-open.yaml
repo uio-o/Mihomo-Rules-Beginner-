@@ -27,6 +27,7 @@ proxy-groups:
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
     type: url-test
     include-all: true
+    filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong|台|新北|彰化|TW|Taiwan|新加坡|坡|狮城|SG|Singapore|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
     exclude-filter: (?i)家宽|家庭|商宽|落地|FAM|FAM|HKT|HKBN|HGC|iCable|Eons
     interval: 300
     tolerance: 20
@@ -51,38 +52,15 @@ proxy-groups:
       - 非洲节点
       - 手动切换
       - 全球直连
-  - name: 人工智能
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bot.png
-    type: select
-    proxies:
-      - 节点选择
-      - 香港节点
-      - 澳门节点
-      - 台湾节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 美国节点
-      - 英国节点
-      - 加拿大节点
-      - 澳洲节点
-      - 南美节点
-      - 欧盟节点
-      - 非洲节点
-      - 手动切换
-      - 全球直连
-  - name: EMBY
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Emby.png
+  - name: GitHub
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png
     type: select
     proxies:
       - 节点选择
       - 香港节点
       - 台湾节点
       - 狮城节点
-      - 韩国节点
       - 美国节点
-      - 欧盟节点
-      - 全球直连
   - name: Google
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
     type: select
@@ -105,6 +83,26 @@ proxy-groups:
       - 全球直连
   - name: YouTube
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
+    type: select
+    proxies:
+      - 节点选择
+      - 香港节点
+      - 澳门节点
+      - 台湾节点
+      - 狮城节点
+      - 日本节点
+      - 韩国节点
+      - 美国节点
+      - 英国节点
+      - 加拿大节点
+      - 澳洲节点
+      - 南美节点
+      - 欧盟节点
+      - 非洲节点
+      - 手动切换
+      - 全球直连
+  - name: 人工智能
+    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bot.png
     type: select
     proxies:
       - 节点选择
@@ -351,29 +349,20 @@ proxy-groups:
     include-all: true
     filter: (?i)奥地利|Austria|AUT|AT|维也纳|Vienna|比利时|Belgium|BEL|BE|布鲁塞尔|Brussels|根特|Ghent|安特卫普|Antwerp|保加利亚|Bulgaria|BGR|BG|索菲亚|Sofia|克罗地亚|Croatia|HRV|HR|萨格勒布|Zagreb|塞浦路斯|Cyprus|CYP|CY|尼科西亚|Nicosia|捷克|Czechia|Czech|CZE|CZ|布拉格|Prague|丹麦|Denmark|DNK|DK|哥本哈根|Copenhagen|欧登塞|Odense|爱沙尼亚|Estonia|EST|塔林|Tallinn|芬兰|Finland|FIN|FI|赫尔辛基|Helsinki|法国|France|FRA|FR|巴黎|Paris|马赛|Marseille|里昂|Lyon|德国|Germany|DEU|法兰克福|Frankfurt|柏林|Berlin|慕尼黑|Munich|杜塞尔多夫|Dusseldorf|汉堡|Hamburg|希腊|Greece|GRC|EL|GR|雅典|Athens|匈牙利|Hungary|HUN|布达佩斯|Budapest|爱尔兰|Ireland|IRL|IE|都柏林|Dublin|意大利|Italy|ITA|IT|米兰|Milan|罗马|Rome|拉脱维亚|Latvia|LVA|LV|里加|Riga|立陶宛|Lithuania|LTU|LT|维尔纽斯|Vilnius|卢森堡|Luxembourg|LUX|LU|卢森堡市|卢森堡|马耳他|Malta|MLT|MT|瓦莱塔|Valletta|荷兰|Netherlands|NLD|NL|阿姆斯特丹|Amsterdam|鹿特丹|Rotterdam|波兰|Poland|POL|华沙|Warsaw|克拉科夫|Krakow|葡萄牙|Portugal|PRT|PT|里斯本|Lisbon|波尔图|Porto|罗马尼亚|Romania|ROU|RO|布加勒斯特|Bucharest|斯洛伐克|Slovakia|SVK|SK|布拉迪斯拉发|Bratislava|斯洛文尼亚|Slovenia|SVN|SI|卢布尔雅那|Ljubljana|西班牙|Spain|ESP|马德里|Madrid|巴塞罗那|Barcelona|瑞典|Sweden|SWE|SE|斯德哥尔摩|Stockholm|马尔默|Malmö|Malmo|奥斯陆|Oslo|挪威|Norway|NOR|NO|冰岛|Iceland|ISL|IS|雷克雅未克|Reykjavik|波罗的海|Baltic|Baltics
     exclude-filter: (?i)家宽|家庭|商宽|落地
-    type: url-test
-    interval: 300
-    tolerance: 20
-    lazy: false
+    type: select
   - name: 南美节点
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/America_Map.png
     include-all: true
     filter: (?i)墨西哥|Mexico|MEX|MX|危地马拉|Guatemala|GTM|GT|伯利兹|Belize|BLZ|BZ|洪都拉斯|Honduras|HND|HN|萨尔瓦多|El Salvador|SLV|SV|尼加拉瓜|Nicaragua|NIC|NI|哥斯达黎加|Costa Rica|CRI|CR|巴拿马|Panama|PAN|PA|古巴|Cuba|CUB|CU|多米尼加共和国|Dominican Republic|DOM|DO|海地|Haiti|HTI|HT|委内瑞拉|Venezuela|VEN|VE|哥伦比亚|Colombia|COL|CO|厄瓜多尔|Ecuador|ECU|EC|秘鲁|Peru|PER|PE|玻利维亚|Bolivia|BOL|BO|智利|Chile|CHL|CL|阿根廷|Argentina|ARG|AR|乌拉圭|Uruguay|URY|巴拉圭|Paraguay|PRY|PY|巴西|Brazil|BRA|BR
     exclude-filter: (?i)家宽|家庭|商宽|落地
-    type: url-test
-    interval: 300
-    tolerance: 20
-    lazy: false
+    type: select
   - name: 非洲节点
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Africa_Map.png
     include-all: true
     filter: (?i)非洲|Africa|南非|South Africa|埃及|Egypt|开罗|Cairo|尼日利亚|Nigeria|拉各斯|Lagos
     exclude-filter: (?i)家宽|家庭|商宽|落地
-    type: url-test
-    interval: 300
-    tolerance: 20
-    lazy: false
-  - name: GLOBAL
+    type: select
+  - name: GLOBAL  ##保持proxies顺序与整个proxy-groups一致，否则会导致clash verge/flclash代理列表无法按序加载
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
     include-all: true
     type: select
@@ -381,11 +370,11 @@ proxy-groups:
       - 节点选择
       - 手动切换
       - 自动选择
-      - 人工智能
       - Telegram
-      - EMBY
+      - GitHub
       - Google
       - YouTube
+      - 人工智能
       - 哔哩哔哩
       - 学术资源
       - 游戏平台
@@ -428,6 +417,13 @@ rule-providers:
     interval: 86400
     url: https://ruleset.skk.moe/Clash/non_ip/reject-no-drop.txt
     path: ./sukkaw_ruleset/reject_non_ip_no_drop.txt
+  github:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://testingcf.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GitHub/GitHub.yaml
+    path: ./ruleset/github.yaml
   reject_non_ip_drop:
     type: http
     behavior: classical
@@ -529,41 +525,47 @@ rule-providers:
   
 
 rules:
-  - "RULE-SET,reject_non_ip,广告拦截"
-  - "RULE-SET,reject_domainset,广告拦截"
-  - "RULE-SET,reject_non_ip_drop,REJECT-DROP"
-  - "RULE-SET,reject_non_ip_no_drop,广告拦截"
-  - "RULE-SET,AdditionalFilter,广告拦截"
-  - "RULE-SET,cdn_domainset,静态资源"
-  - "RULE-SET,cdn_non_ip,静态资源"
-  - "RULE-SET,apple_cdn,全球直连"
-  - "RULE-SET,microsoft_cdn_non_ip,全球直连"
-  - "RULE-SET,ai_non_ip,人工智能"
-  - "RULE-SET,Microsoft,微软服务"
-  - "RULE-SET,telegramip,Telegram"  
-  - "RULE-SET,SteamFix,Steam修复"
-  - "RULE-SET,PlayStoreFix,Play商店修复"
-  - "RULE-SET,GoogleFCM,FCM推送"
-  - "GEOSITE,GOOGLEFCM,FCM推送"
-  - "GEOSITE,GOOGLE-PLAY@CN,全球直连"
-  - "GEOSITE,GOOGLE,Google"
-  - "GEOSITE,YOUTUBE@CN,全球直连"
-  - "GEOSITE,YOUTUBE,YouTube"
-  - "GEOSITE,BILIBILI,哔哩哔哩"
-  - "GEOSITE,TELEGRAM,Telegram"
-  - "GEOSITE,CATEGORY-GAMES@CN,全球直连"
-  - "GEOSITE,CATEGORY-GAMES,游戏平台"
-  - "GEOSITE,CATEGORY-SCHOLAR-!CN,学术资源"
-  - "GEOSITE,CATEGORY-SCHOLAR-CN,全球直连"
-  - "GEOSITE,GEOLOCATION-!CN,节点选择"
-  - "GEOSITE,CN,全球直连"
-  - "GEOSITE,PRIVATE,全球直连"
-  - "GEOIP,GOOGLE,Google,no-resolve"
-  - "GEOIP,Telegram,Telegram,no-resolve"
-  - "GEOIP,CN,全球直连,no-resolve"
-  - "GEOIP,LAN,全球直连,no-resolve"
-  - "GEOIP,PRIVATE,全球直连,no-resolve"
-  - "MATCH,漏网之鱼"
+  ## TMDB
+  - DOMAIN-SUFFIX,themoviedb.org,全球直连
+ 
+  - RULE-SET,github,GitHub
+  - RULE-SET,reject_non_ip,广告拦截
+  - RULE-SET,reject_domainset,广告拦截
+  - RULE-SET,reject_non_ip_drop,REJECT-DROP
+  - RULE-SET,reject_non_ip_no_drop,广告拦截
+  - RULE-SET,AdditionalFilter,广告拦截
+  - RULE-SET,cdn_domainset,静态资源
+  - RULE-SET,cdn_non_ip,静态资源
+  - RULE-SET,apple_cdn,全球直连
+  - RULE-SET,microsoft_cdn_non_ip,全球直连
+  - RULE-SET,ai_non_ip,人工智能
+  - RULE-SET,Microsoft,微软服务
+  - RULE-SET,telegramip,Telegram,no-resolve
+  - RULE-SET,SteamFix,Steam修复
+  - RULE-SET,PlayStoreFix,Play商店修复
+  - RULE-SET,GoogleFCM,FCM推送
+  - GEOSITE,GOOGLEFCM,FCM推送
+  - GEOSITE,GOOGLE-PLAY@CN,全球直连
+  - GEOSITE,GOOGLE,Google
+  - GEOSITE,YOUTUBE@CN,全球直连
+  - GEOSITE,YOUTUBE,YouTube
+  - GEOSITE,BILIBILI,哔哩哔哩
+  - GEOSITE,TELEGRAM,Telegram
+  - GEOSITE,CATEGORY-GAMES@CN,全球直连
+  - GEOSITE,CATEGORY-GAMES,游戏平台
+  - GEOSITE,CATEGORY-SCHOLAR-!CN,学术资源
+  - GEOSITE,CATEGORY-SCHOLAR-CN,全球直连
+  - GEOSITE,GEOLOCATION-!CN,节点选择
+  - GEOSITE,CN,全球直连
+  - GEOSITE,PRIVATE,全球直连
+  - GEOIP,GOOGLE,Google,no-resolve
+  - GEOIP,Telegram,Telegram,no-resolve
+  - GEOIP,CN,全球直连,no-resolve
+  - GEOIP,LAN,全球直连,no-resolve
+  - GEOIP,PRIVATE,全球直连,no-resolve
+  - MATCH,漏网之鱼
+
+  
 
 
 
@@ -624,4 +626,4 @@ geox-url:
   geoip: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat"
   geosite: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
   mmdb: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/Country.mmdb"
-  asn: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-ASN.mmdb" 
+  asn: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-ASN.mmdb"  
